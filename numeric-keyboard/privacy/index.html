@@ -15,15 +15,15 @@
 <body>
 <div class="wrap doc">
 
-  <div class="manbar" aria-hidden="true">
+  <div class="manbar nerd" aria-hidden="true">
     <span>PRIVACY(7)</span>
     <span>Human Error Manual</span>
     <span>PRIVACY(7)</span>
   </div>
 
-  <p class="crumb"><a href="../../">~</a> / <a href="../">number-keyboard</a> / privacy</p>
+  <p class="crumb viewbar"><span><a href="../../">~</a> / <a href="../">number-keyboard</a> / privacy</span><button class="kbd view-toggle" type="button">plain view</button></p>
 
-  <ul class="boot" aria-hidden="true">
+  <ul class="boot nerd" aria-hidden="true">
     <li>[    0.000000] loading privacy policy</li>
     <li>[    0.004096] trackers: <span class="ok">none found</span></li>
     <li>[    0.016384] cookies: <span class="ok">none</span>, not even the snack kind</li>
@@ -37,9 +37,10 @@
       <span class="layer r" aria-hidden="true">Privacy<br>Policy</span>
       <span class="layer b" aria-hidden="true">Privacy<br>Policy</span>
     </h1>
-    <p class="prompt"><span class="ps1">human@error:~/number-keyboard$</span> grep -r "URLSession" Keyboard/</p>
-    <p class="tagline">No matches. The keyboard cannot phone home.</p>
-    <p class="exit">process exited with code <b>1</b> (grep found nothing, which is the point)</p>
+    <p class="prompt nerd"><span class="ps1">human@error:~/number-keyboard$</span> grep -r "URLSession" Keyboard/</p>
+    <p class="tagline nerd">No matches. The keyboard cannot phone home.</p>
+    <p class="tagline plain-only">Number Keyboard - Digits collects no data about you.</p>
+    <p class="exit">Effective October 12, 2026</p>
   </header>
 
   <section>
@@ -57,7 +58,7 @@
         <li>The keyboard has no network code. It cannot send what you type anywhere.</li>
         <li>There are no accounts, no ads, no analytics and no third-party code in the app.</li>
       </ul>
-      <p class="meta dim">Effective October 12, 2026</p>
+
     </div>
   </section>
 
@@ -107,6 +108,15 @@
   </section>
 
   <section>
+    <h2>KEEPING AND DELETING</h2>
+    <div class="body">
+      <p>The app keeps no data about you, so I have nothing of yours to delete.</p>
+      <p>Your settings live only on your device. Deleting the app removes them.</p>
+      <p>If you emailed me and want that email deleted, ask and I will delete it.</p>
+    </div>
+  </section>
+
+  <section>
     <h2>CHILDREN</h2>
     <div class="body">
       <p>The app is rated 4+. It collects no data from anyone, including children.</p>
@@ -117,16 +127,6 @@
     <h2>CHANGES</h2>
     <div class="body">
       <p>If this policy changes, the new version will be posted on this page with a new date.</p>
-    </div>
-  </section>
-
-  <section>
-    <h2>EXIT STATUS</h2>
-    <div class="body">
-      <dl>
-        <dt>0</dt><dd>Nothing collected.</dd>
-        <dt>1</dt><dd>Not used. See 0.</dd>
-      </dl>
     </div>
   </section>
 
@@ -153,7 +153,7 @@
 
   <footer>
     <span>&copy; <span id="yr">2026</span> Human Error</span>
-    <span><button class="kbd" id="swap" type="button">press <kbd>t</kbd> to swap phosphor</button></span>
+    <span class="nerd"><button class="kbd" id="swap" type="button">press <kbd>t</kbd> to swap phosphor</button></span>
     <span><a href="../../">cd ~</a></span>
   </footer>
 </div>

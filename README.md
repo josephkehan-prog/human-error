@@ -14,4 +14,4 @@ Plain static files, no build step.
 
 Each new project gets its own folder next to `numeric-keyboard/` and a row in the PROCESSES table on the home page.
 
-Press `t` on any page to swap between green and amber phosphor.
+Press `t` on any page to swap between green and amber phosphor. Press `p`, use the plain view button, or add `?view=plain` to a URL for a plain version of the same page.

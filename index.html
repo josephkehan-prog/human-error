@@ -15,13 +15,15 @@
 <body>
 <div class="wrap">
 
-  <div class="manbar" aria-hidden="true">
+  <div class="manbar nerd" aria-hidden="true">
     <span>HUMAN-ERROR(1)</span>
     <span>Solo Developer's Manual</span>
     <span>HUMAN-ERROR(1)</span>
   </div>
 
-  <ul class="boot" aria-hidden="true">
+  <p class="crumb viewbar"><button class="kbd view-toggle" type="button">plain view</button></p>
+
+  <ul class="boot nerd" aria-hidden="true">
     <li>[    0.000000] booting human_error kernel</li>
     <li>[    0.004096] cpu0: one (1) human detected</li>
     <li>[    0.016384] coffee: <span class="ok">mounted</span> on /dev/mug0</li>
@@ -36,9 +38,9 @@
       <span class="layer r" aria-hidden="true">Human<br>Error</span>
       <span class="layer b" aria-hidden="true">Human<br>Error</span>
     </h1>
-    <p class="prompt"><span class="ps1">human@error:~$</span> ./tomorrow --today</p>
-    <p class="tagline"><span id="tag">Bringing tomorrow's problems today.</span><span class="cursor" aria-hidden="true"></span></p>
-    <p class="exit">process exited with code <b>1</b> (EHUMAN)</p>
+    <p class="prompt nerd"><span class="ps1">human@error:~$</span> ./tomorrow --today</p>
+    <p class="tagline"><span id="tag">Bringing tomorrow's problems today.</span><span class="cursor nerd" aria-hidden="true"></span></p>
+    <p class="exit nerd">process exited with code <b>1</b> (EHUMAN)</p>
   </header>
 
   <section>
@@ -130,13 +132,13 @@
     <h2>SEE ALSO</h2>
     <div class="body">
       <p class="dim">coffee(1), sleep(3), undo(2), tomorrow(7)</p>
-      <pre class="hex" id="hex" aria-label="Hex dump of the Human Error tagline"></pre>
+      <pre class="hex nerd" id="hex" aria-label="Hex dump of the Human Error tagline"></pre>
     </div>
   </section>
 
   <footer>
     <span>&copy; <span id="yr">2026</span> Human Error</span>
-    <span><button class="kbd" id="swap" type="button">press <kbd>t</kbd> to swap phosphor</button></span>
+    <span class="nerd"><button class="kbd" id="swap" type="button">press <kbd>t</kbd> to swap phosphor</button></span>
     <span>v0.1.0</span>
   </footer>
 </div>
