@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>404 | Human Error</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#060a07">
+<style>
+  html, body { height: 100%; }
+  body {
+    margin: 0;
+    display: grid;
+    place-items: center;
+    padding: 16px;
+    background: #060a07;
+    color: #39ff7a;
+    font: 15px/1.65 ui-monospace, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+    text-shadow: 0 0 6px rgba(57, 255, 122, .35);
+  }
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    background: repeating-linear-gradient(to bottom, transparent 0 2px, rgba(0, 0, 0, .22) 2px 3px);
+  }
+  main { max-width: 560px; width: 100%; }
+  h1 { margin: 0 0 12px; font-size: clamp(56px, 20vw, 128px); line-height: .9; letter-spacing: -.04em; }
+  p { margin: 0 0 6px; }
+  .dim { color: #1f9d4a; }
+  .err { color: #ff4d5e; text-shadow: 0 0 6px rgba(255, 77, 94, .4); }
+  a { color: inherit; }
+  a:focus-visible { outline: 1px solid currentColor; outline-offset: 3px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>404</h1>
+  <p><span class="dim">human@error:~$</span> cat <span id="path">this-page</span></p>
+  <p class="err">cat: no such file or directory</p>
+  <p class="dim">Cause: human error. Yours or mine, hard to say.</p>
+  <p>&nbsp;</p>
+  <p><span class="dim">human@error:~$</span> <a href="/">cd ~</a></p>
+</main>
+<script>
+  document.getElementById("path").textContent = location.pathname;
+</script>
+</body>
+</html>
