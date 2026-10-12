@@ -41,10 +41,15 @@
   <p class="err">cat: no such file or directory</p>
   <p class="dim">Cause: human error. Yours or mine, hard to say.</p>
   <p>&nbsp;</p>
-  <p><span class="dim">human@error:~$</span> <a href="/">cd ~</a></p>
+  <p><span class="dim">human@error:~$</span> <a id="home" href="/">cd ~</a></p>
 </main>
 <script>
   document.getElementById("path").textContent = location.pathname;
+  // On a github.io project site the home page lives under the repo name.
+  if (/\.github\.io$/.test(location.hostname)) {
+    var first = location.pathname.split("/")[1];
+    if (first) document.getElementById("home").setAttribute("href", "/" + first + "/");
+  }
 </script>
 </body>
 </html>
