@@ -17,16 +17,29 @@
 
   <div class="manbar" aria-hidden="true">
     <span>NUMBER-KEYBOARD(1)</span>
-    <span>Human Error</span>
+    <span>Human Error Manual</span>
     <span>NUMBER-KEYBOARD(1)</span>
   </div>
 
   <p class="crumb"><a href="../">~</a> / number-keyboard</p>
 
-  <header class="head">
-    <h1>Number Keyboard - Digits</h1>
-    <p class="lede">Numpad and keypad for any app. A number pad keyboard for iPhone and iPad.</p>
-    <p class="meta"><span class="tag">COMING SOON</span>&nbsp; Not on the App Store yet.</p>
+  <ul class="boot" aria-hidden="true">
+    <li>[    0.000000] loading number-keyboard</li>
+    <li>[    0.004096] keys: 0 1 2 3 4 5 6 7 8 9 <span class="ok">found</span></li>
+    <li>[    0.016384] letters: <span class="warn">not found</span>, working as intended</li>
+    <li>[    0.065536] network code in keyboard: <span class="ok">0 lines</span></li>
+    <li>[    0.262144] app store: <span class="warn">pending</span>, not out yet</li>
+  </ul>
+
+  <header class="hero">
+    <h1>
+      Number<br>Keyboard
+      <span class="layer r" aria-hidden="true">Number<br>Keyboard</span>
+      <span class="layer b" aria-hidden="true">Number<br>Keyboard</span>
+    </h1>
+    <p class="prompt"><span class="ps1">human@error:~$</span> ./number-keyboard --version</p>
+    <p class="tagline">Number Keyboard - Digits 1.0</p>
+    <p class="exit">Numpad and keypad for any app. <span class="tag">COMING SOON</span></p>
   </header>
 
   <section>
@@ -37,15 +50,43 @@
   </section>
 
   <section>
-    <h2>DESCRIPTION</h2>
+    <h2>SYNOPSIS</h2>
     <div class="body">
-      <p>The iPhone keyboard hides digits behind the 123 key. That is slow when you are typing a lot of numbers.</p>
-      <p>Number Keyboard - Digits is a keyboard you add in Settings. Switch to it with the globe key and you get a number pad in whatever app you are in.</p>
+      <p><b>number-keyboard</b> [<span class="flag">--haptics</span>] [<span class="flag">--click</span>] [<span class="flag">--return</span>] [<span class="flag">--layout</span>] [<span class="flag">--theme</span>]</p>
     </div>
   </section>
 
   <section>
-    <h2>DETAILS</h2>
+    <h2>DESCRIPTION</h2>
+    <div class="body">
+      <p>The iPhone keyboard hides digits behind the 123 key. That is slow when you are typing a lot of numbers.</p>
+      <p>Number Keyboard - Digits is a keyboard you turn on once in Settings. Hold the globe key, pick it, and you get a number pad in whatever app you are in.</p>
+      <div class="keypad" role="img" aria-label="Number pad layout: 1 2 3, 4 5 6, 7 8 9, then globe, 0 and delete. 0 sits under 8.">
+        <span>1</span><span>2</span><span>3</span>
+        <span>4</span><span>5</span><span>6</span>
+        <span>7</span><span>8</span><span>9</span>
+        <span class="fn">globe</span><span>0</span><span class="fn">del</span>
+      </div>
+      <p class="dim">0 sits under 8, like a phone pad. On iPad and in landscape the keys line up in one row.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>OPTIONS</h2>
+    <div class="body">
+      <dl>
+        <dt class="flag">--haptics</dt><dd>A small tap on each key. Needs Allow Full Access. Nothing else does.</dd>
+        <dt class="flag">--click</dt><dd>The system key click sound.</dd>
+        <dt class="flag">--return</dt><dd>Show or hide the Return key.</dd>
+        <dt class="flag">--layout</dt><dd>Number pad grid or a single row.</dd>
+        <dt class="flag">--theme</dt><dd>Auto, Dark and Light are free. Midnight, Paper and Mint come with Pro Themes.</dd>
+      </dl>
+      <p class="dim">These are switches in the app, not real flags. I just like man pages.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>FILES</h2>
     <div class="body">
       <dl>
         <dt>Platform</dt><dd>iPhone and iPad</dd>
@@ -54,6 +95,13 @@
         <dt>Data</dt><dd>None collected. The keyboard has no network code.</dd>
         <dt>Status</dt><dd>Getting ready for App Store review</dd>
       </dl>
+    </div>
+  </section>
+
+  <section>
+    <h2>BUGS</h2>
+    <div class="body">
+      <p>Probably. Report them on the <a href="support/">support page</a>.</p>
     </div>
   </section>
 
@@ -68,10 +116,19 @@
     </div>
   </section>
 
+  <section>
+    <h2>AUTHOR</h2>
+    <div class="body">
+      <p>Written and maintained by J. Han, the one human at Human Error.</p>
+      <p><a href="mailto:joseph.ke.han@gmail.com">joseph.ke.han@gmail.com</a></p>
+      <p class="sig">peace and love,<br>J. Han</p>
+    </div>
+  </section>
+
   <footer>
     <span>&copy; <span id="yr">2026</span> Human Error</span>
     <span><button class="kbd" id="swap" type="button">press <kbd>t</kbd> to swap phosphor</button></span>
-    <span><a href="../">home</a></span>
+    <span><a href="../">cd ~</a></span>
   </footer>
 </div>
 <script src="../assets/site.js"></script>

@@ -17,42 +17,66 @@
 
   <div class="manbar" aria-hidden="true">
     <span>SUPPORT(7)</span>
-    <span>Human Error</span>
+    <span>Human Error Manual</span>
     <span>SUPPORT(7)</span>
   </div>
 
   <p class="crumb"><a href="../../">~</a> / <a href="../">number-keyboard</a> / support</p>
 
-  <header class="head">
-    <h1>Support</h1>
-    <p class="lede">Help for Number Keyboard - Digits: how to turn it on, common questions, and how to reach me.</p>
+  <ul class="boot" aria-hidden="true">
+    <li>[    0.000000] support desk online</li>
+    <li>[    0.004096] staff: one (1) human</li>
+    <li>[    0.016384] hold music: <span class="warn">not installed</span></li>
+    <li>[    0.065536] ticket queue: <span class="ok">empty</span>, for now</li>
+    <li>[    0.262144] turning it off and on again: always worth a try</li>
+  </ul>
+
+  <header class="hero">
+    <h1>
+      Support
+      <span class="layer r" aria-hidden="true">Support</span>
+      <span class="layer b" aria-hidden="true">Support</span>
+    </h1>
+    <p class="prompt"><span class="ps1">human@error:~/number-keyboard$</span> man support</p>
+    <p class="tagline">Help is below. No hold music.</p>
+    <p class="exit">process exited with code <b class="ok0">0</b></p>
   </header>
 
   <section>
-    <h2>TURN THE KEYBOARD ON</h2>
+    <h2>NAME</h2>
     <div class="body">
-      <ol>
-        <li>Open the Settings app.</li>
-        <li>Go to General, then Keyboard, then Keyboards.</li>
-        <li>Tap Add New Keyboard.</li>
-        <li>Pick Number Keyboard - Digits from the list.</li>
-      </ol>
-      <p>To use it, open any app and tap a text field. Then touch and hold the globe key and choose the number keyboard. Tap the globe key again to go back to your usual keyboard.</p>
+      <p>support - help for Number Keyboard - Digits</p>
     </div>
   </section>
 
   <section>
-    <h2>COMMON QUESTIONS</h2>
+    <h2>SYNOPSIS</h2>
     <div class="body">
-      <h3>The keyboard does not show up in a password field.</h3>
-      <p>That is how iOS works. In password and other secure fields, iOS always uses its own keyboard. No added keyboard can appear there.</p>
-      <h3>I do not see a globe key.</h3>
-      <p>The globe key shows when more than one keyboard is turned on. Check that the keyboard is in the list under Settings, General, Keyboard, Keyboards.</p>
-      <h3>I bought Pro Themes and they are gone.</h3>
-      <p>Open the Number Keyboard - Digits app and use Restore. Make sure you are signed in with the same Apple Account you bought it with.</p>
-      <h3>How do I get a refund?</h3>
+      <ol>
+        <li>Open the app. On your Home Screen it is called Numeric Keyboard.</li>
+        <li>Tap Open Settings.</li>
+        <li>Tap Keyboards, then turn on Numeric Keyboard.</li>
+        <li>In any app, hold the globe key and pick Numeric Keyboard.</li>
+      </ol>
+      <p>You can also find it under Settings, General, Keyboard, Keyboards. Tap the globe key again to go back to your usual keyboard.</p>
+      <p>Allow Full Access is optional. It is only used for haptics.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>ERRORS</h2>
+    <div class="body">
+      <h3><span class="flag">ESECURE</span> The keyboard does not show up in a password field.</h3>
+      <p>That is how iOS works. In password and phone-number fields, iOS uses its own keyboard. No added keyboard can appear there.</p>
+      <h3><span class="flag">ENOGLOBE</span> I do not see a globe key.</h3>
+      <p>The globe key shows when more than one keyboard is turned on. Check that Numeric Keyboard is in the list under Settings, General, Keyboard, Keyboards.</p>
+      <h3><span class="flag">ENOBUZZ</span> I do not feel the keys tap.</h3>
+      <p>Turn on Haptics in the app, then turn on Allow Full Access for the keyboard in Settings. iOS only plays keyboard haptics with Full Access on.</p>
+      <h3><span class="flag">ENOTHEME</span> I bought Pro Themes and they are gone.</h3>
+      <p>Open the app, go to Pro Themes and tap Restore Purchases. Make sure you are signed in with the same Apple Account you bought it with.</p>
+      <h3><span class="flag">EREFUND</span> How do I get a refund?</h3>
       <p>Apple handles all App Store payments and refunds. Ask at <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.</p>
-      <h3>What data does the app collect?</h3>
+      <h3><span class="flag">EPRIVACY</span> What data does the app collect?</h3>
       <p>None. See the <a href="../privacy/">privacy policy</a>.</p>
     </div>
   </section>
@@ -60,15 +84,36 @@
   <section>
     <h2>CONTACT</h2>
     <div class="body">
-      <p>Found a bug or have a question? <a href="https://github.com/josephkehan-prog/human-error/issues">Open an issue on GitHub</a> and I will answer there.</p>
+      <p>Email <a href="mailto:joseph.ke.han@gmail.com">joseph.ke.han@gmail.com</a>. A real person reads it. There is only one.</p>
       <p>It helps to include your device, your iOS version and what you were doing when it went wrong. Please leave out anything private.</p>
+      <p>If you would rather file a bug in public, <a href="https://github.com/josephkehan-prog/human-error/issues">open an issue on GitHub</a>.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>SEE ALSO</h2>
+    <div class="body">
+      <ul class="links">
+        <li><a href="../privacy/">privacy(7)</a></li>
+        <li><a href="../">number-keyboard(1)</a></li>
+        <li><a href="../../">human-error(1)</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>AUTHOR</h2>
+    <div class="body">
+      <p>Written and maintained by J. Han, the one human at Human Error.</p>
+      <p><a href="mailto:joseph.ke.han@gmail.com">joseph.ke.han@gmail.com</a></p>
+      <p class="sig">peace and love,<br>J. Han</p>
     </div>
   </section>
 
   <footer>
     <span>&copy; <span id="yr">2026</span> Human Error</span>
     <span><button class="kbd" id="swap" type="button">press <kbd>t</kbd> to swap phosphor</button></span>
-    <span><a href="../../">home</a></span>
+    <span><a href="../../">cd ~</a></span>
   </footer>
 </div>
 <script src="../../assets/site.js"></script>

@@ -215,7 +215,7 @@ a { color: inherit; text-decoration: underline; text-decoration-color: var(--ink
 a:hover { text-decoration-color: var(--ink); }
 a:focus-visible { outline: 1px solid var(--ink); outline-offset: 3px; }
 .crumb { margin: 22px 0 0; color: var(--ink-dim); font-size: 13px; overflow-wrap: anywhere; }
-.doc h1 { font-size: clamp(30px, 8vw, 56px); line-height: 1; letter-spacing: -.03em; margin: 26px 0 0; }
+.doc h1 { font-size: clamp(40px, 11vw, 92px); }
 .doc .lede { margin: 14px 0 0; font-size: clamp(15px, 3.8vw, 18px); max-width: 60ch; }
 .doc .meta { margin: 10px 0 0; color: var(--ink-dim); font-size: 13px; }
 .doc .head { padding-bottom: 30px; border-bottom: 1px dashed var(--ink-faint); }
@@ -236,3 +236,30 @@ a:focus-visible { outline: 1px solid var(--ink); outline-offset: 3px; }
 .ps a.row:hover { background: rgba(255, 255, 255, .03); }
 .ps a.row:hover .name b { text-decoration: underline; text-underline-offset: 3px; }
 .links { display: flex; flex-wrap: wrap; gap: 8px 22px; margin: 0; padding: 0; list-style: none; }
+
+.doc .boot { margin-top: 18px; }
+.doc .hero { padding-top: 32px; }
+.tagline .tag { vertical-align: middle; font-weight: 400; }
+.exit b.ok0 { color: var(--ink); text-shadow: 0 0 6px var(--glow); }
+.exit .tag { margin-left: 6px; }
+.sig { margin-top: 18px !important; font-weight: 700; }
+.sig::before { content: "-- "; color: var(--ink-dim); font-weight: 400; }
+.keypad {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px;
+  width: min(100%, 264px);
+  margin: 18px 0 10px;
+  padding: 10px;
+  border: 1px solid var(--ink-faint);
+  background: var(--panel);
+}
+.keypad span {
+  display: grid;
+  place-items: center;
+  height: 46px;
+  border: 1px solid var(--ink-dim);
+  font-size: 20px;
+  font-weight: 700;
+}
+.keypad span.fn { font-size: 12px; font-weight: 400; color: var(--ink-dim); border-color: var(--ink-faint); }

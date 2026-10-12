@@ -17,40 +17,76 @@
 
   <div class="manbar" aria-hidden="true">
     <span>PRIVACY(7)</span>
-    <span>Human Error</span>
+    <span>Human Error Manual</span>
     <span>PRIVACY(7)</span>
   </div>
 
   <p class="crumb"><a href="../../">~</a> / <a href="../">number-keyboard</a> / privacy</p>
 
-  <header class="head">
-    <h1>Privacy Policy</h1>
-    <p class="lede">Number Keyboard - Digits does not collect your data. This page says what that means in plain terms.</p>
-    <p class="meta">Effective October 12, 2026</p>
+  <ul class="boot" aria-hidden="true">
+    <li>[    0.000000] loading privacy policy</li>
+    <li>[    0.004096] trackers: <span class="ok">none found</span></li>
+    <li>[    0.016384] cookies: <span class="ok">none</span>, not even the snack kind</li>
+    <li>[    0.065536] network code in keyboard: <span class="ok">0 lines</span></li>
+    <li>[    0.262144] lawyers: <span class="warn">not detected</span>, loading plain English</li>
+  </ul>
+
+  <header class="hero">
+    <h1>
+      Privacy<br>Policy
+      <span class="layer r" aria-hidden="true">Privacy<br>Policy</span>
+      <span class="layer b" aria-hidden="true">Privacy<br>Policy</span>
+    </h1>
+    <p class="prompt"><span class="ps1">human@error:~/number-keyboard$</span> grep -r "URLSession" Keyboard/</p>
+    <p class="tagline">No matches. The keyboard cannot phone home.</p>
+    <p class="exit">process exited with code <b>1</b> (grep found nothing, which is the point)</p>
   </header>
 
   <section>
-    <h2>SUMMARY</h2>
+    <h2>NAME</h2>
+    <div class="body">
+      <p>privacy - what Number Keyboard - Digits knows about you (nothing)</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>SYNOPSIS</h2>
     <div class="body">
       <ul>
         <li>The app collects no data about you.</li>
         <li>The keyboard has no network code. It cannot send what you type anywhere.</li>
         <li>There are no accounts, no ads, no analytics and no third-party code in the app.</li>
       </ul>
+      <p class="meta dim">Effective October 12, 2026</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>WHO</h2>
+    <div class="body">
+      <p>Human Error is the name J. Han publishes apps under. It is one person. When this page says "I", that is who it means.</p>
     </div>
   </section>
 
   <section>
     <h2>WHAT YOU TYPE</h2>
     <div class="body">
-      <p>What you type goes to the app you are typing in, the same as with the built-in keyboard. The keyboard has no network code, so it has no way to send your typing to me or to anyone else. That is true whether Allow Full Access is on or off.</p>
+      <p>What you type goes to the app you are typing in, the same as with the built-in keyboard. The keyboard has no network code, so it has no way to send your typing to me or to anyone else.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>FULL ACCESS</h2>
+    <div class="body">
+      <p>Allow Full Access is optional. The keyboard uses it for one thing: haptics, the small tap you feel when you press a key. iOS only lets a keyboard play haptics when Full Access is on.</p>
+      <p>You can leave it off and still type. On or off, the keyboard has no network code and collects nothing.</p>
     </div>
   </section>
 
   <section>
     <h2>SETTINGS</h2>
     <div class="body">
-      <p>Your choices in the app, such as the theme you picked, are saved on your device. They are not sent anywhere.</p>
+      <p>Your choices in the app, such as theme, layout and sounds, are saved on your device. They are not sent anywhere.</p>
     </div>
   </section>
 
@@ -66,6 +102,7 @@
     <div class="body">
       <p>This site has no cookies, no analytics and no trackers. If you swap the screen color, that choice is saved in your own browser.</p>
       <p>The site is hosted on GitHub Pages. GitHub may log technical details of visits, such as IP addresses, for security. See the <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">GitHub privacy statement</a>.</p>
+      <p>If you email me, I get your email address and whatever you wrote. I use it to answer you and for nothing else.</p>
     </div>
   </section>
 
@@ -84,16 +121,40 @@
   </section>
 
   <section>
-    <h2>CONTACT</h2>
+    <h2>EXIT STATUS</h2>
     <div class="body">
-      <p>Questions about privacy can be sent through the <a href="../support/">support page</a>.</p>
+      <dl>
+        <dt>0</dt><dd>Nothing collected.</dd>
+        <dt>1</dt><dd>Not used. See 0.</dd>
+      </dl>
+    </div>
+  </section>
+
+  <section>
+    <h2>SEE ALSO</h2>
+    <div class="body">
+      <ul class="links">
+        <li><a href="../support/">support(7)</a></li>
+        <li><a href="../">number-keyboard(1)</a></li>
+        <li><a href="../../">human-error(1)</a></li>
+      </ul>
+      <p>Questions about privacy: <a href="mailto:joseph.ke.han@gmail.com">joseph.ke.han@gmail.com</a></p>
+    </div>
+  </section>
+
+  <section>
+    <h2>AUTHOR</h2>
+    <div class="body">
+      <p>Written and maintained by J. Han, the one human at Human Error.</p>
+      <p><a href="mailto:joseph.ke.han@gmail.com">joseph.ke.han@gmail.com</a></p>
+      <p class="sig">peace and love,<br>J. Han</p>
     </div>
   </section>
 
   <footer>
     <span>&copy; <span id="yr">2026</span> Human Error</span>
     <span><button class="kbd" id="swap" type="button">press <kbd>t</kbd> to swap phosphor</button></span>
-    <span><a href="../../">home</a></span>
+    <span><a href="../../">cd ~</a></span>
   </footer>
 </div>
 <script src="../../assets/site.js"></script>
