@@ -8,6 +8,7 @@ Plain static files, no build step.
 - `numeric-keyboard/` is the project page for Number Keyboard - Digits
 - `numeric-keyboard/privacy/` is its privacy policy (the App Store Privacy Policy URL)
 - `numeric-keyboard/support/` is its support page (the App Store Support URL)
+- `whiteboard/` is the project page for Whiteboard - Draw & Mind Map, with `privacy/` and `support/` laid out the same way
 - `assets/` holds the shared stylesheet and theme script
 - `404.html` is the not-found page GitHub Pages serves
 - `.nojekyll` tells GitHub Pages to serve the files as they are
